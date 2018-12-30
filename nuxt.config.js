@@ -40,10 +40,21 @@ module.exports = {
     }
   },
   modules: [
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    '@nuxtjs/markdownit',
+    '@nuxtjs/axios'
   ],
   plugins: [
     '~/plugins/eagle.js'
-  ]
+  ],
+  markdownit: {
+    html: true,
+    injected: true,
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    use: []
+  },
+  axios: {}
 }
 

@@ -1,54 +1,56 @@
-<template lang='pug'>
-#MyFirstSlideshow
-  .eg-slideshow
-    slide
-      h2 Nuxt.jsとFirebaseについて
-      p.
-        〜冬休みを利用して作ってみた〜
-      br
-      img(src="/images/deck/nuxt-logo.png")
-      img(src="/images/deck/firebase-logo.png")
-      p.
-        Presented by Masanori Iwakura
-
-    slide(enter='bounceInRight' leave='fadeOut')
-      h3 Nuxt.jsとは？
-      img(src="/images/deck/nuxt-logo.png")
-      p.
-        Nuxt.js は Vue アプリケーションを作成するフレームワーク
-    
-    slide(enter='bounceInDown' leave='fadeOut')
-      h3 そもそもVue.jsって？
-      img(src="/images/deck/vue-logo.png")
-      p.
-        ※ビュージェイエス　と読みます
-    
-    slide(enter='bounceInDown')
-      h4 "コンポーネント(部品)"を組み合わせて作る
-      h4(enter='bounceInDown' ) 再利用性の高いJavaScriptフレームワーク
-    
-    slide
-      p.
-        ユニバーサルアプリケーション、静的に生成されるアプリケーション、
-      p. 
-        シングルページアプリケーションの中から作成するアプリケーションを選ぶことができます。
-
-    slide(enter='fadeIn')
-      h3 Want cool effects?
-      p.
-        Code your own, or try stealing for the other slideshows !
+<template>
+  <div class="deck">
+    <v-container fluid>
+      <v-layout row>
+        <v-flex xs11>
+          <slide enter='bounceInRight' leave='fadeOut'>
+            <md src="/markdown/slide1.md"/>
+          </slide>
+          <slide enter='bounceInRight' leave='fadeOut'>
+            <md src="/markdown/slide2.md"/>
+          </slide>
+          <slide enter='bounceInDown' leave='fadeOut'>
+            <md src="/markdown/slide3.md"/>
+          </slide>
+          <slide enter='bounceInDown' leave='fadeOut'>
+            <md src="/markdown/slide4.md"/>
+          </slide>
+        </v-flex>
+        <v-flex xs3>
+          <v-card color="blue lighten-3">
+            <v-card-title>
+              <font size="-1">Comments</font>
+              <v-icon style="margin-left:2em; margin-right:1em;">thumb_up</v-icon>
+              <font size="-1">100</font>
+            </v-card-title>
+            <v-list dense>
+              <v-list-tile>
+                <v-list-tile-content>Sample</v-list-tile-content>
+              </v-list-tile>
+            </v-list>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </div>
 </template>
 
 <style scoped>
-.eg-slideshow {
+.deck {
   text-align: center;
+  height: 50px;
+  table-layout:fixed;
 }
 </style>
 
 <script>
+import Md from '~/components/Md.vue'
 import eagle from 'eagle.js'
 
 export default {
+  components: {
+    Md
+  },
   mixins: [ eagle.slideshow ],
   infos: {
     title: 'Nuxt Deck',

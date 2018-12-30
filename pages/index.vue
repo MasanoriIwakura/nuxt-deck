@@ -1,9 +1,6 @@
 <template>
   <div id="app">
     <v-app light>
-      <v-toolbar class="white">
-        <v-toolbar-title v-text="title"></v-toolbar-title>
-      </v-toolbar>
       <v-content>
         <section>
           <v-parallax src="/images/top.jpg" height="600" >
