@@ -39,6 +39,9 @@ module.exports = {
       }
     }
   },
+  css: [
+    { src: '~/node_modules/highlight.js/styles/github.css', lang: 'css' }
+  ],
   modules: [
     '@nuxtjs/vuetify',
     '@nuxtjs/markdownit',
@@ -53,7 +56,9 @@ module.exports = {
     preset: 'default',
     linkify: true,
     breaks: true,
-    use: []
+    use: [
+      'markdown-it-highlightjs'
+    ]
   },
   axios: {}
 }

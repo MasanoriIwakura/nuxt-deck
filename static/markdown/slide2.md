@@ -1,4 +1,4 @@
-### Nuxt.jsとは？
+# Nuxt.jsとは？
 
 ![logo](/markdown/img/nuxt-logo.png)
 

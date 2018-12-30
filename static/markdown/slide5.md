@@ -1,3 +1,5 @@
-ユニバーサルアプリケーション、静的に生成されるアプリケーション、
+## SPA(Single Page Application)とは？
 
-シングルページアプリケーションの中から作成するアプリケーションを選ぶことができます。
+### 単一ページで構成されるWebアプリケーション
+
+![logo](/markdown/img/htmlcssjs-sum.png)

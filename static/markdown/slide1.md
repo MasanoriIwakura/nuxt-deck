@@ -1,6 +1,5 @@
-# Nuxt.jsとFirebaseについて
 
-### 〜冬休みを利用して作ってみた〜
+# Nuxt.jsとFirebaseについて
 
 ![logo](/markdown/img/nuxt-firebase.png)
 

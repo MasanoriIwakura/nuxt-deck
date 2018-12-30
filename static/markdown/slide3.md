@@ -1,4 +1,4 @@
-### そもそもVue.jsって？
+## そもそもVue.jsって？
 
 ![logo](/markdown/img/vue-logo.png)
 
