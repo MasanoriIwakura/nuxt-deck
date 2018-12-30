@@ -1,5 +1,26 @@
 <template>
   <div>
+    <v-toolbar>
+      <v-toolbar-title class="title">
+        <nuxt-link to="/">Nuxt Deck</nuxt-link>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat>
+          <nuxt-link to="/deck">Deck</nuxt-link>
+        </v-btn>
+        <v-btn flat>
+          <a href="https://ja.nuxtjs.org/" target="_blank">
+            Nuxt.js公式
+          </a>
+        </v-btn>
+        <v-btn flat>
+          <a href="https://github.com/MasanoriIwakura/nuxt-deck" target="_blank">
+            <img src="/images/GitHub-Mark-32px.png" alt="">
+          </a>
+        </v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
     <nuxt/>
   </div>
 </template>
