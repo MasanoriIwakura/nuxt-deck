@@ -1,4 +1,6 @@
 module.exports = {
+  mode: 'universal',
+  srcDir: 'app',
   /*
   ** Headers of the page
   */
@@ -40,7 +42,7 @@ module.exports = {
     }
   },
   css: [
-    { src: '~/node_modules/highlight.js/styles/github.css', lang: 'css' }
+    { src: 'highlight.js/styles/github.css', lang: 'css' }
   ],
   modules: [
     '@nuxtjs/vuetify',
@@ -60,6 +62,8 @@ module.exports = {
       'markdown-it-highlightjs'
     ]
   },
-  axios: {}
+  axios: {
+    baseURL: 'https://nuxt-deck.firebaseapp.com'
+  }
 }
 
