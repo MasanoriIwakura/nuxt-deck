@@ -1,23 +1,19 @@
 <template>
   <div>
-    <v-toolbar>
+    <v-toolbar class="blue darken-2">
       <v-toolbar-title class="title">
-        <nuxt-link to="/">Nuxt Deck</nuxt-link>
+        <nuxt-link to="/" class="white--text">Nuxt Deck</nuxt-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>
-          <nuxt-link to="/deck">Deck</nuxt-link>
+        <v-btn flat to="/deck" class="white--text">
+          Deck
         </v-btn>
-        <v-btn flat>
-          <a href="https://ja.nuxtjs.org/" target="_blank">
-            Nuxt.js公式
-          </a>
+        <v-btn flat href="https://ja.nuxtjs.org/" target="_blank" class="white--text">
+          Nuxt.js公式
         </v-btn>
-        <v-btn flat>
-          <a href="https://github.com/MasanoriIwakura/nuxt-deck" target="_blank">
-            <img src="/images/GitHub-Mark-32px.png" alt="">
-          </a>
+        <v-btn flat href="https://github.com/MasanoriIwakura/nuxt-deck" target="_blank">
+          <img src="/images/GitHub-Mark-32px.png" alt="">
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
@@ -35,40 +31,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
 }
 </style>
 
