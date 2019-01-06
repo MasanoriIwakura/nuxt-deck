@@ -8,8 +8,8 @@
       </v-card-title>
       <div class="scroll">
         <v-list dense>
-          <v-list-tile v-for="comment in comments" :key="comment.key" class="list">
-            <v-list-tile-content>{{ comment['.value'] }}</v-list-tile-content>
+          <v-list-tile v-for="comment in comments" :key="comment" class="list">
+            <v-list-tile-content>{{ comment }}</v-list-tile-content>
           </v-list-tile>
         </v-list>
       </div>
@@ -33,7 +33,7 @@ import { mapMutations } from 'vuex'
 
 export default {
   computed: {
-    comments () { return this.$store.state.comments },
+    comments () { return this.$store.getters.reverseComments },
     likes () { return this.$store.state.likes.length }
   },
   created () {
