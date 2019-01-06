@@ -1,13 +1,19 @@
 <template>
   <div>
     <v-toolbar class="blue darken-2">
-      <v-toolbar-title class="title">
-        <nuxt-link to="/" class="white--text">Nuxt Deck</nuxt-link>
+      <v-toolbar-title class="title white--text">
+        Nuxt Deck
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat to="/" class="white--text">
+          Top
+        </v-btn>
         <v-btn flat to="/deck" class="white--text">
           Deck
+        </v-btn>
+        <v-btn flat to="/audience" class="white--text">
+          Audience
         </v-btn>
         <v-btn flat href="https://ja.nuxtjs.org/" target="_blank" class="white--text">
           Nuxt.js公式

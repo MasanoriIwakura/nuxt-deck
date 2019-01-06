@@ -3,7 +3,7 @@
     <v-container fluid>
       <v-layout row>
         <v-flex xs11>
-          <slide v-for="slide in slideData" :key="slide.id" v-bind:enter='slide.enter'>
+          <slide v-for="slide in slideData" :key="slide.id" v-bind:enter='slide.enter' :mouseNavigation='false'>
             <div class="page">
               {{slide.id}}
             </div>
@@ -11,18 +11,7 @@
           </slide>
         </v-flex>
         <v-flex xs3>
-          <v-card color="blue lighten-3">
-            <v-card-title>
-              <font size="-1">Comments</font>
-              <v-icon style="margin-left:2em; margin-right:1em;">thumb_up</v-icon>
-              <font size="-1">100</font>
-            </v-card-title>
-            <v-list dense>
-              <v-list-tile>
-                <v-list-tile-content>Sample</v-list-tile-content>
-              </v-list-tile>
-            </v-list>
-          </v-card>
+          <comment/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -44,11 +33,13 @@ pre code {
 </style>
 
 <script>
+import Comment from '~/components/Comment.vue'
 import Md from '~/components/Md.vue'
 import eagle from 'eagle.js'
 
 export default {
   components: {
+    Comment,
     Md
   },
   mixins: [ eagle.slideshow ],

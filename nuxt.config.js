@@ -1,6 +1,14 @@
 module.exports = {
   mode: 'universal',
   srcDir: 'app',
+  env: {
+    APIKEY: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    AUTHDOMAIN: "nuxt-deck.firebaseapp.com",
+    DATABASEURL: "https://nuxt-deck.firebaseio.com",
+    PROJECTID: "nuxt-deck",
+    STORAGEBUCKET: "nuxt-deck.appspot.com",
+    MESSAGINGSENDERID: "958184067531"
+  },
   /*
   ** Headers of the page
   */
@@ -50,7 +58,8 @@ module.exports = {
     '@nuxtjs/axios'
   ],
   plugins: [
-    '~/plugins/eagle.js'
+    '~/plugins/eagle.js',
+    '~/plugins/firebase.js'
   ],
   markdownit: {
     html: true,
@@ -62,8 +71,6 @@ module.exports = {
       'markdown-it-highlightjs'
     ]
   },
-  axios: {
-    baseURL: 'https://nuxt-deck.firebaseapp.com'
-  }
+  axios: {}
 }
 

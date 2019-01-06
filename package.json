@@ -18,8 +18,11 @@
     "@nuxtjs/vuetify": "^0.5.0",
     "animate.css": "^3.7.0",
     "eagle.js": "^0.4.4",
+    "firebase": "^5.7.2",
     "markdown-it-highlightjs": "^3.0.0",
-    "nuxt": "^2.0.0"
+    "moment": "^2.23.0",
+    "nuxt": "^2.0.0",
+    "vuexfire": "^2.3.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
