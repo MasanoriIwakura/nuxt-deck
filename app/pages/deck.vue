@@ -56,6 +56,7 @@ export default {
   created () {
     // 今回は配列で持つが、サーバーから取得することも可能
     const slide = [
+      { src: '/markdown/qr.md', enter: 'bounceInDown', leave: ''},
       { src: '/markdown/slide1.md', enter: 'bounceInRight', leave: ''},
       { src: '/markdown/slide2.md', enter: 'bounceInRight', leave: ''},
       { src: '/markdown/slide3.md', enter: 'bounceInDown', leave: ''},
