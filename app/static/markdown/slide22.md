@@ -1,3 +1,3 @@
 # <font color="blue">→→→</font>
-## こちらに「Realtime Database」から取得した
-## コメントを表示しています
+## こちらに「Realtime Database」
+## から取得したコメントを表示しています

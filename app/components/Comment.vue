@@ -4,7 +4,7 @@
       <v-card-title>
         <font size="-1">Comments</font>
         <v-icon style="margin-left:2em; margin-right:1em;">thumb_up</v-icon>
-        <font size="-1">{{ likes }}</font>
+        <font>{{ likes }}</font>
       </v-card-title>
       <div class="scroll">
         <v-list dense>
