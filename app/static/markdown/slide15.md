@@ -9,7 +9,7 @@
 - **Firebase Hosting**
 →静的なWEBページを公開
 - **Cloud Storage for Firebase**
-→写真や動画などバイナリーデータを保存
+→写真や動画などを保存
 - **Firebase Authentication**
 →Googleアカウント等を使用した認証
 
